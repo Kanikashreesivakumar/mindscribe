@@ -1,0 +1,69 @@
+Mindscribe – AI-Powered Thought-to-Text System
+🚀 Mindscribe is an AI-powered web application that analyzes neural wave images and converts them into text-based thoughts. This project aims to help individuals with speech impairments or disabilities express their thoughts effortlessly.
+
+🌟 Features
+✅ Image-to-Thought AI – Upload a neural wave image & generate text.
+✅ Emotion & Cognitive State Detection – AI predicts feelings & intentions.
+✅ DeepSeek RI API Integration – Advanced AI processing for text output.
+✅ Secure Authentication – Login/signup via Supabase Auth.
+✅ Cloud Storage – Saves processed thoughts securely.
+✅ Customizable UI – Dark/Light mode, font adjustments.
+
+🛠 Tech Stack
+Frontend:
+Next.js (React Framework)
+Tailwind CSS + ShadCN (Modern UI components)
+Supabase Auth (User authentication & database)
+Backend:
+Flask (Python-based backend)
+Supabase DB (Database storage for thoughts)
+DeepSeek RI API (AI processing for neural wave images)
+🚀 Getting Started
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/mindscribe.git
+cd mindscribe
+2️⃣ Set Up Backend
+bash
+Copy
+Edit
+cd backend
+pip install -r requirements.txt
+python app.py
+Update SUPABASE_URL and SUPABASE_KEY in app.py before running.
+
+3️⃣ Set Up Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+Update .env.local with NEXT_PUBLIC_BACKEND_URL="http://localhost:5000"
+
+4️⃣ Run the Project
+Open http://localhost:3000 to access the app.
+📂 Folder Structure
+bash
+Copy
+Edit
+mindscribe/
+│── backend/         # Flask API & Supabase integration
+│── frontend/        # Next.js UI
+│── README.md        # Documentation
+│── .env.local       # Environment variables
+📌 How It Works (Step-by-Step)
+1️⃣ User uploads an image of neural wave signals.
+2️⃣ AI (DeepSeek RI API) processes the image and extracts cognitive insights.
+3️⃣ Text output appears, displaying emotions, thoughts, or intentions.
+4️⃣ Users can edit, save, or export the generated thoughts.
+
+📌 Future Scope
+🚀 Real EEG Hardware Support
+🚀 More Advanced Thought Predictions
+🚀 Integration with Assistive Technologies
+
+🤝 Contributing
+Pull requests are welcome! Open an issue for feature requests or bug fixes.
