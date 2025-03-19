@@ -8,8 +8,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Supabase Credentials (Replace with actual keys)
-SUPABASE_URL = "https://fpurdutomtddmknzzfkj.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwdXJkdXRvbXRkZG1rbnp6ZmtqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MTg1ODgwOSwiZXhwIjoyMDU3NDM0ODA5fQ.DC7D2Umz8yDsNp8LjEER572Yfhge4XODL9pJwpgPNMk"
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 @app.route('/')
