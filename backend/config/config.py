@@ -1,0 +1,6 @@
+import os
+from supabase import create_client, Client
+SUPABASE_URL = "https://fpurdutomtddmknzzfkj.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwdXJkdXRvbXRkZG1rbnp6ZmtqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4NTg4MDksImV4cCI6MjA1NzQzNDgwOX0.Ep9khh-jOjoVlrP2Yth_FuhezMH5CYLQttTLvwMmQ9c"
+DEEPSEEK_API_KEY = "sk-11ef1496649844d8b5caaddb4210c670"
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
